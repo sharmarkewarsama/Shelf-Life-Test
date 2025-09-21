@@ -5,7 +5,7 @@ public class DatabaseReader {
     private Statement stmt;
     public DatabaseReader() {
         try {
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shelflife", "root", "Subspider2000_");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/shelflife", "root", "driverPass0101");
             stmt = con.createStatement();
         } catch (SQLException e) {
             throw new RuntimeException(e);
